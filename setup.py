@@ -42,7 +42,7 @@ install_requires = [
     "numpy>1.19.5",
     "pandas>=1.0.3",
     "pyfemm>=0.1.3",
-    "PySide2>=5.15.2",
+    "PySide6",
     "pyuff>=1.25",
     "pyvista>=0.42.3",
     "SciDataTool>=2.5.0",
