@@ -211,7 +211,29 @@
                 "rho": 4.525e-08
             },
             "is_isotropic": true,
-            "mag": null,
+            "mag": {
+                "BH_curve": {
+                    "__class__": "ImportMatrix",
+                    "is_transpose": false
+                },
+                "Brm20": 0,
+                "Hc": 0,
+                "LossData": {
+                    "__class__": "ImportMatrix",
+                    "is_transpose": false
+                },
+                "ModelBH": {
+                    "Bmax": 2.31,
+                    "Hmax": null,
+                    "__class__": "ModelBH",
+                    "delta": 100
+                },
+                "Wlam": 0,
+                "__class__": "MatMagnetics",
+                "alpha_Br": 0,
+                "is_BH_extrapolate": false,
+                "mur_lin": 1
+            },
             "name": "UserAluminium",
             "path": "",
             "struct": {
@@ -270,7 +292,29 @@
                         "rho": 4.525e-08
                     },
                     "is_isotropic": true,
-                    "mag": null,
+                    "mag": {
+                        "BH_curve": {
+                            "__class__": "ImportMatrix",
+                            "is_transpose": false
+                        },
+                        "Brm20": 0,
+                        "Hc": 0,
+                        "LossData": {
+                            "__class__": "ImportMatrix",
+                            "is_transpose": false
+                        },
+                        "ModelBH": {
+                            "Bmax": 2.31,
+                            "Hmax": null,
+                            "__class__": "ModelBH",
+                            "delta": 100
+                        },
+                        "Wlam": 0,
+                        "__class__": "MatMagnetics",
+                        "alpha_Br": 0,
+                        "is_BH_extrapolate": false,
+                        "mur_lin": 1
+                    },
                     "name": "UserAluminium",
                     "path": "",
                     "struct": {

@@ -1,7 +1,7 @@
-﻿{
+{
   "__class__": "MachineIPMSM",
-  "__save_date__": "2022_08_29 15h56min27s ",
-  "__version__": "pyleecan_2.2.2.3",
+  "__save_date__": "2025_11_04 16h09min04s ",
+  "__version__": "pyleecan_1.5.2",
   "desc": null,
   "frame": null,
   "logger_name": null,
@@ -36,7 +36,7 @@
             "HT": {
               "Cp": 450.0,
               "__class__": "MatHT",
-              "alpha": null,
+              "alpha": 0,
               "lambda_x": 8.5,
               "lambda_y": 8.5,
               "lambda_z": 8.5
@@ -50,21 +50,15 @@
             },
             "elec": {
               "__class__": "MatElectrical",
-              "alpha": 1,
-              "epsr": null,
+              "alpha": 0,
+              "epsr": 1,
               "rho": 1.6e-06
             },
             "is_isotropic": true,
             "mag": {
               "BH_curve": {
-                "__class__": "ImportMatrixXls",
-                "axes_colrows": null,
-                "file_path": null,
-                "is_allsheets": null,
-                "is_transpose": null,
-                "sheet": null,
-                "skiprows": null,
-                "usecols": null
+                "__class__": "ImportMatrix",
+                "is_transpose": false
               },
               "Brm20": 1.0,
               "LossData": {
@@ -83,228 +77,8 @@
               "is_BH_extrapolate": false,
               "mur_lin": 1.05
             },
-            "name": "Magnet1_old",
-            "path": "C:/Users/LAP24/Documents/TRAINING/Manatee_WS/Material/Magnet1.json",
-            "struct": {
-              "Ex": null,
-              "Ey": null,
-              "Ez": null,
-              "Gxy": null,
-              "Gxz": null,
-              "Gyz": null,
-              "__class__": "MatStructural",
-              "nu_xy": null,
-              "nu_xz": null,
-              "nu_yz": null,
-              "rho": 7500.0
-            }
-          },
-          "type_magnetization": null
-        },
-        "magnet_1": {
-          "Lmag": null,
-          "Nseg": null,
-          "__class__": "Magnet",
-          "mat_type": {
-            "HT": {
-              "Cp": 450.0,
-              "__class__": "MatHT",
-              "alpha": null,
-              "lambda_x": 8.5,
-              "lambda_y": 8.5,
-              "lambda_z": 8.5
-            },
-            "__class__": "Material",
-            "desc": "MAGNET1 for SIPMSM",
-            "eco": {
-              "__class__": "MatEconomical",
-              "cost_unit": 252.0,
-              "unit_name": "$"
-            },
-            "elec": {
-              "__class__": "MatElectrical",
-              "alpha": 1,
-              "epsr": null,
-              "rho": 1.6e-06
-            },
-            "is_isotropic": true,
-            "mag": {
-              "BH_curve": {
-                "__class__": "ImportMatrixXls",
-                "axes_colrows": null,
-                "file_path": null,
-                "is_allsheets": null,
-                "is_transpose": null,
-                "sheet": null,
-                "skiprows": null,
-                "usecols": null
-              },
-              "Brm20": 1.0,
-              "LossData": {
-                "__class__": "ImportMatrix",
-                "is_transpose": false
-              },
-              "ModelBH": {
-                "Bmax": 2.31,
-                "Hmax": null,
-                "__class__": "ModelBH",
-                "delta": 100
-              },
-              "Wlam": 0,
-              "__class__": "MatMagnetics",
-              "alpha_Br": 0.0,
-              "is_BH_extrapolate": false,
-              "mur_lin": 1.05
-            },
-            "name": "Magnet1_old",
-            "path": "C:/Users/LAP24/Documents/TRAINING/Manatee_WS/Material/Magnet1.json",
-            "struct": {
-              "Ex": null,
-              "Ey": null,
-              "Ez": null,
-              "Gxy": null,
-              "Gxz": null,
-              "Gyz": null,
-              "__class__": "MatStructural",
-              "nu_xy": null,
-              "nu_xz": null,
-              "nu_yz": null,
-              "rho": 7500.0
-            }
-          },
-          "type_magnetization": null
-        },
-        "magnetization_dict_offset": null,
-        "mat_void": {
-          "HT": {
-            "Cp": 1007,
-            "__class__": "MatHT",
-            "alpha": 0.00343,
-            "lambda_x": 0.0257,
-            "lambda_y": 0.0257,
-            "lambda_z": 0.0257
-          },
-          "__class__": "Material",
-          "desc": "Air",
-          "eco": {
-            "__class__": "MatEconomical",
-            "cost_unit": 0.127,
-            "unit_name": "$"
-          },
-          "elec": {
-            "__class__": "MatElectrical",
-            "alpha": 1,
-            "epsr": 1,
-            "rho": 1
-          },
-          "is_isotropic": true,
-          "mag": {
-            "BH_curve": {
-              "__class__": "ImportMatrix",
-              "is_transpose": false
-            },
-            "Brm20": 0,
-            "LossData": {
-              "__class__": "ImportMatrix",
-              "is_transpose": false
-            },
-            "ModelBH": {
-              "Bmax": 2.31,
-              "Hmax": null,
-              "__class__": "ModelBH",
-              "delta": 100
-            },
-            "Wlam": 0,
-            "__class__": "MatMagnetics",
-            "alpha_Br": 0,
-            "is_BH_extrapolate": false,
-            "mur_lin": 1
-          },
-          "name": "Air_old",
-          "path": "C:/Users/LAP24/Documents/TRAINING/Manatee_WS/Material/Air.json",
-          "struct": {
-            "Ex": 215000000000.0,
-            "Ey": 215000000000.0,
-            "Ez": 80000000000,
-            "Gxy": 0,
-            "Gxz": 2000000000,
-            "Gyz": 2000000000,
-            "__class__": "MatStructural",
-            "nu_xy": 0.3,
-            "nu_xz": 0.03,
-            "nu_yz": 0.03,
-            "rho": 1.2044
-          }
-        }
-      },
-      {
-        "Alpha0": null,
-        "H1": 0.0005,
-        "H2": 0.0021000000000000003,
-        "W0": 2.8,
-        "W1": 0.0,
-        "W2": 0.0,
-        "W3": 0.015,
-        "W4": 0.0065,
-        "Zh": 8,
-        "__class__": "HoleM57",
-        "magnet_0": {
-          "Lmag": null,
-          "Nseg": null,
-          "__class__": "Magnet",
-          "mat_type": {
-            "HT": {
-              "Cp": 450.0,
-              "__class__": "MatHT",
-              "alpha": null,
-              "lambda_x": 8.5,
-              "lambda_y": 8.5,
-              "lambda_z": 8.5
-            },
-            "__class__": "Material",
-            "desc": "MAGNET1 for SIPMSM",
-            "eco": {
-              "__class__": "MatEconomical",
-              "cost_unit": 252.0,
-              "unit_name": "$"
-            },
-            "elec": {
-              "__class__": "MatElectrical",
-              "alpha": 1,
-              "epsr": null,
-              "rho": 1.6e-06
-            },
-            "is_isotropic": true,
-            "mag": {
-              "BH_curve": {
-                "__class__": "ImportMatrixXls",
-                "axes_colrows": null,
-                "file_path": null,
-                "is_allsheets": null,
-                "is_transpose": null,
-                "sheet": null,
-                "skiprows": null,
-                "usecols": null
-              },
-              "Brm20": 1.0,
-              "LossData": {
-                "__class__": "ImportMatrix",
-                "is_transpose": false
-              },
-              "ModelBH": {
-                "Bmax": 2.31,
-                "Hmax": null,
-                "__class__": "ModelBH",
-                "delta": 100
-              },
-              "Wlam": 0,
-              "__class__": "MatMagnetics",
-              "alpha_Br": 0.0,
-              "is_BH_extrapolate": false,
-              "mur_lin": 1.05
-            },
-            "name": "Magnet1_old",
-            "path": "C:/Users/LAP24/Documents/TRAINING/Manatee_WS/Material/Magnet1.json",
+            "name": "Magnet1",
+            "path": "C:/Users/ganser/AppData/Roaming/pyleecan/Material/Magnet1.json",
             "struct": {
               "Ex": null,
               "Ey": null,
@@ -350,14 +124,8 @@
             "is_isotropic": true,
             "mag": {
               "BH_curve": {
-                "__class__": "ImportMatrixVal",
-                "is_transpose": false,
-                "value": [
-                  [
-                    0,
-                    0
-                  ]
-                ]
+                "__class__": "ImportMatrix",
+                "is_transpose": false
               },
               "Brm20": 1.0,
               "LossData": {
@@ -377,7 +145,215 @@
               "mur_lin": 1.05
             },
             "name": "Magnet1",
-            "path": "C:/Users/LAP24/Documents/Research/Stellantis/WS/Material/Magnet1.json",
+            "path": "C:/Users/ganser/AppData/Roaming/pyleecan/Material/Magnet1.json",
+            "struct": {
+              "Ex": null,
+              "Ey": null,
+              "Ez": null,
+              "Gxy": null,
+              "Gxz": null,
+              "Gyz": null,
+              "__class__": "MatStructural",
+              "nu_xy": null,
+              "nu_xz": null,
+              "nu_yz": null,
+              "rho": 7500.0
+            }
+          },
+          "type_magnetization": null
+        },
+        "magnetization_dict_offset": null,
+        "mat_void": {
+          "HT": {
+            "Cp": 1007,
+            "__class__": "MatHT",
+            "alpha": 0.00343,
+            "lambda_x": 0.0257,
+            "lambda_y": 0.0257,
+            "lambda_z": 0.0257
+          },
+          "__class__": "Material",
+          "desc": "Air",
+          "eco": {
+            "__class__": "MatEconomical",
+            "cost_unit": 0.127,
+            "unit_name": "$"
+          },
+          "elec": {
+            "__class__": "MatElectrical",
+            "alpha": 0,
+            "epsr": 1,
+            "rho": 0
+          },
+          "is_isotropic": true,
+          "mag": {
+            "BH_curve": {
+              "__class__": "ImportMatrix",
+              "is_transpose": false
+            },
+            "Brm20": 0,
+            "LossData": {
+              "__class__": "ImportMatrix",
+              "is_transpose": false
+            },
+            "ModelBH": {
+              "Bmax": 2.31,
+              "Hmax": null,
+              "__class__": "ModelBH",
+              "delta": 100
+            },
+            "Wlam": 0,
+            "__class__": "MatMagnetics",
+            "alpha_Br": 0,
+            "is_BH_extrapolate": false,
+            "mur_lin": 1
+          },
+          "name": "Air",
+          "path": "C:/Users/ganser/AppData/Roaming/pyleecan/Material/Air.json",
+          "struct": {
+            "Ex": 215000000000.0,
+            "Ey": 215000000000.0,
+            "Ez": 80000000000,
+            "Gxy": 0,
+            "Gxz": 2000000000,
+            "Gyz": 2000000000,
+            "__class__": "MatStructural",
+            "nu_xy": 0.3,
+            "nu_xz": 0.03,
+            "nu_yz": 0.03,
+            "rho": 1.2044
+          }
+        }
+      },
+      {
+        "Alpha0": null,
+        "H1": 0.0005,
+        "H2": 0.0021000000000000003,
+        "W0": 2.8,
+        "W1": 0.0,
+        "W2": 0.0,
+        "W3": 0.015,
+        "W4": 0.0065,
+        "Zh": 8,
+        "__class__": "HoleM57",
+        "magnet_0": {
+          "Lmag": null,
+          "Nseg": null,
+          "__class__": "Magnet",
+          "mat_type": {
+            "HT": {
+              "Cp": 450.0,
+              "__class__": "MatHT",
+              "alpha": 0,
+              "lambda_x": 8.5,
+              "lambda_y": 8.5,
+              "lambda_z": 8.5
+            },
+            "__class__": "Material",
+            "desc": "MAGNET1 for SIPMSM",
+            "eco": {
+              "__class__": "MatEconomical",
+              "cost_unit": 252.0,
+              "unit_name": "$"
+            },
+            "elec": {
+              "__class__": "MatElectrical",
+              "alpha": 0,
+              "epsr": 1,
+              "rho": 1.6e-06
+            },
+            "is_isotropic": true,
+            "mag": {
+              "BH_curve": {
+                "__class__": "ImportMatrix",
+                "is_transpose": false
+              },
+              "Brm20": 1.0,
+              "LossData": {
+                "__class__": "ImportMatrix",
+                "is_transpose": false
+              },
+              "ModelBH": {
+                "Bmax": 2.31,
+                "Hmax": null,
+                "__class__": "ModelBH",
+                "delta": 100
+              },
+              "Wlam": 0,
+              "__class__": "MatMagnetics",
+              "alpha_Br": 0.0,
+              "is_BH_extrapolate": false,
+              "mur_lin": 1.05
+            },
+            "name": "Magnet1",
+            "path": "C:/Users/ganser/AppData/Roaming/pyleecan/Material/Magnet1.json",
+            "struct": {
+              "Ex": null,
+              "Ey": null,
+              "Ez": null,
+              "Gxy": null,
+              "Gxz": null,
+              "Gyz": null,
+              "__class__": "MatStructural",
+              "nu_xy": null,
+              "nu_xz": null,
+              "nu_yz": null,
+              "rho": 7500.0
+            }
+          },
+          "type_magnetization": null
+        },
+        "magnet_1": {
+          "Lmag": null,
+          "Nseg": null,
+          "__class__": "Magnet",
+          "mat_type": {
+            "HT": {
+              "Cp": 450.0,
+              "__class__": "MatHT",
+              "alpha": 0,
+              "lambda_x": 8.5,
+              "lambda_y": 8.5,
+              "lambda_z": 8.5
+            },
+            "__class__": "Material",
+            "desc": "MAGNET1 for SIPMSM",
+            "eco": {
+              "__class__": "MatEconomical",
+              "cost_unit": 252.0,
+              "unit_name": "$"
+            },
+            "elec": {
+              "__class__": "MatElectrical",
+              "alpha": 0,
+              "epsr": 1,
+              "rho": 1.6e-06
+            },
+            "is_isotropic": true,
+            "mag": {
+              "BH_curve": {
+                "__class__": "ImportMatrix",
+                "is_transpose": false
+              },
+              "Brm20": 1.0,
+              "LossData": {
+                "__class__": "ImportMatrix",
+                "is_transpose": false
+              },
+              "ModelBH": {
+                "Bmax": 2.31,
+                "Hmax": null,
+                "__class__": "ModelBH",
+                "delta": 100
+              },
+              "Wlam": 0,
+              "__class__": "MatMagnetics",
+              "alpha_Br": 0.0,
+              "is_BH_extrapolate": false,
+              "mur_lin": 1.05
+            },
+            "name": "Magnet1",
+            "path": "C:/Users/ganser/AppData/Roaming/pyleecan/Material/Magnet1.json",
             "struct": {
               "Ex": null,
               "Ey": null,
@@ -1049,15 +1025,15 @@
       "conductor": {
         "Kwoh": null,
         "Nwppc": 9,
-        "Wins_cond": 0.0006,
-        "Wins_wire": 0,
+        "Wins_cond": null,
+        "Wins_wire": null,
         "Wwire": 0.0005566,
         "__class__": "CondType12",
         "cond_mat": {
           "HT": {
             "Cp": 381.0,
             "__class__": "MatHT",
-            "alpha": 0.00393,
+            "alpha": 1.6e-05,
             "lambda_x": 385.0,
             "lambda_y": 385.0,
             "lambda_z": 385.0
@@ -1071,41 +1047,14 @@
           },
           "elec": {
             "__class__": "MatElectrical",
-            "alpha": 1,
-            "epsr": null,
+            "alpha": 0.00393,
+            "epsr": 1,
             "rho": 1.73e-08
           },
           "is_isotropic": true,
-          "mag": {
-            "BH_curve": {
-              "__class__": "ImportMatrixXls",
-              "axes_colrows": null,
-              "file_path": null,
-              "is_allsheets": null,
-              "is_transpose": null,
-              "sheet": null,
-              "skiprows": null,
-              "usecols": null
-            },
-            "Brm20": 0,
-            "LossData": {
-              "__class__": "ImportMatrix",
-              "is_transpose": false
-            },
-            "ModelBH": {
-              "Bmax": 2.31,
-              "Hmax": null,
-              "__class__": "ModelBH",
-              "delta": 100
-            },
-            "Wlam": 0,
-            "__class__": "MatMagnetics",
-            "alpha_Br": 0,
-            "is_BH_extrapolate": false,
-            "mur_lin": 1
-          },
-          "name": "Copper1_old",
-          "path": "C:/Users/LAP24/Documents/TRAINING/Manatee_WS/Material/Copper1.json",
+          "mag": null,
+          "name": "Copper1",
+          "path": "C:/Users/ganser/AppData/Roaming/pyleecan/Material/Copper1.json",
           "struct": {
             "Ex": 115000000000.0,
             "Ey": 115000000000.0,
@@ -1188,6 +1137,7 @@
           }
         }
       },
+      "dual_tri_phase_shift": null,
       "end_winding": {
         "Lew_enforced": null,
         "__class__": "EndWinding"
@@ -1197,6 +1147,7 @@
       "is_permute_B_C": false,
       "is_reverse_layer": false,
       "is_reverse_wind": false,
+      "is_wye": true,
       "p": 4,
       "per_a": 8,
       "qs": 3,
