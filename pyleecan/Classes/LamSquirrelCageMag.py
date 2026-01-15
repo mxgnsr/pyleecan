@@ -56,6 +56,13 @@ try:
 except ImportError as error:
     get_hole_list = error
 
+try:
+    from ..Methods.Machine.LamSquirrelCageMag.comp_periodicity_geo import (
+        comp_periodicity_geo,
+    )
+except ImportError as error:
+    comp_periodicity_geo = error
+
 
 from numpy import isnan
 from ._check import InitUnKnowClassError
@@ -145,6 +152,18 @@ class LamSquirrelCageMag(LamSquirrelCage):
         )
     else:
         get_hole_list = get_hole_list
+    # cf Methods.Machine.LamSquirrelCageMag.comp_periodicity_geo
+    if isinstance(comp_periodicity_geo, ImportError):
+        comp_periodicity_geo = property(
+            fget=lambda x: raise_(
+                ImportError(
+                    "Can't use LamSquirrelCageMag method comp_periodicity_geo: "
+                    + str(comp_periodicity_geo)
+                )
+            )
+        )
+    else:
+        comp_periodicity_geo = comp_periodicity_geo
     # generic save method is available in all object
     save = save
     # get_logger method is available in all object

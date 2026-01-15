@@ -9,3 +9,4 @@ Machine,LamSquirrelCage,build_geometry,VERSION,1,Rotor lamination for LSPM
 ,,get_pole_pair_number,,,
 ,,set_pole_pair_number,,,
 ,,get_hole_list,,,
+,,comp_periodicity_geo,,,
