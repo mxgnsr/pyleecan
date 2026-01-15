@@ -666,9 +666,9 @@
             "is_permute_B_C": false,
             "is_reverse_layer": false,
             "is_reverse_wind": false,
-            "p": 3,
+            "p": 2,
             "per_a": null,
-            "qs": 14,
+            "qs": 28,
             "type_connection": 0,
             "wind_mat": null
         },
