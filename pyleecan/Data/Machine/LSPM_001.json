@@ -553,7 +553,7 @@
                         "__class__": "MatElectrical",
                         "alpha": 0,
                         "epsr": 1,
-                        "rho": 0
+                        "rho": 1e-8
                     },
                     "is_isotropic": false,
                     "mag": {
